@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body style="background-color: #000; color: white;">
+  <body style="background-color: #000; color: white">
     <div class="container">
       <!-- heading -->
       <h1>PASSWORD GENERATOR</h1>
@@ -24,20 +24,12 @@
       <div class="input-container">
         <div class="length-container">
           <p>Password Length</p>
-          <p data-lengthnumber>0</p>
+          <p id="data-length-display">0</p>
         </div>
 
         <!-- slider   -->
-        <input
-          type="range"
-          min="1"
-          max="20"
-          step="1"
-          class="slider"
-          <!--
-          checkboxess
-          --
-        />
+        <input type="range" name="slider" id="slider" min="1" max="20" />
+
         <div>
           <input type="checkbox" id="uppercase" />
           <label for="uppercase">Includes uppercase Letters</label>
@@ -69,4 +61,5 @@
     </div>
     <script src="index.js"></script>
   </body>
+ 
 </html>
